@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XYZ | HOME</title>
+        <link rel="icon" type="image/ico" href="img/logo.png" />
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pre.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/phone/nav-media.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/contact1.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/phone/home-media.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat-bot.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+      
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+ <!-- fonticon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">    
+    </head>
+<body>
+     <!-- NAVIGATION -->
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="home.html">IRIS</a>
+                  <button class="navbar-toggler navbar-toggler-right navbar-light " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/register">Sign Up</a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </nav> 
+            <!-- /NAVIGATION -->
+    {% block body %}
+    {%  endblock  %}
+</body>
+</html>
